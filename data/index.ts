@@ -73,68 +73,79 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Distributed Task Queue System",
+    title: "Fitpro",
     des: "High-performance task queue with Redis backend, supporting priority scheduling, retries, and horizontal scaling for processing millions of jobs.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/github.com",
+    img: "/fitpro.png",
+    iconLists: [
+      "/dotnet-tile.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/redis-tile.svg",
+      "/postgresql-tile.svg",
+    ],
+    link: "https://www.github.com/tachyontracer/fitpro",
+    live: "https://poetic-sprinkles-96abfb.netlify.app/",
   },
   {
     id: 2,
-    title: "Real-Time Analytics Platform",
+    title: "Reware",
     des: "Microservices-based analytics engine processing streaming data with Kafka, featuring custom aggregation pipelines and sub-second query performance.",
-    img: "/p2.svg",
+    img: "/rewear.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/github.com",
+    link: "https://www.github.com/tachyontracer/rewear",
+    live: "https://rewear-tawny.vercel.app/",
   },
+
   {
     id: 3,
-    title: "GraphQL API Gateway",
+    title: "Dealer Portal",
     des: "Unified API gateway with schema stitching, authentication middleware, rate limiting, and comprehensive monitoring for multiple backend services.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/github.com",
+    img: "/dealerportal.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://github.com/TachyonTracer/dealerportal",
+    live: "https://dealerportal-phi.vercel.app/",
   },
   {
     id: 4,
-    title: "CLI DevOps Toolkit",
+    title: "n8n Open Source Contribution ",
     des: "Command-line tool for automating deployment workflows, infrastructure provisioning, and CI/CD pipeline management with multi-cloud support.",
-    img: "/p4.svg",
+    img: "/n8n.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/github.com",
+    link: "https://github.com/n8n-io/n8n",
+    live: "https://n8n.io/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Outstanding engineer who delivered a complex distributed system ahead of schedule. Their deep understanding of system architecture and ability to optimize for scale was impressive. The codebase is clean, well-documented, and maintainable.",
-    name: "Sarah Chen",
-    title: "CTO at DataFlow Systems",
+      "Excellent work on implementing our microservices architecture. They quickly grasped complex distributed systems concepts and contributed to reducing our system latency significantly. Strong technical skills in .NET and cloud technologies.",
+    name: "Rajesh Kumar",
+    title: "Tech Lead at Samrisa Infotech",
   },
   {
     quote:
-      "Exceptional problem-solver with strong technical skills across the entire stack. They refactored our legacy monolith into microservices, improving performance by 60% while maintaining zero downtime during migration.",
-    name: "Marcus Rodriguez",
-    title: "Engineering Manager at CloudScale",
+      "Impressed by their ability to build scalable APIs and optimize database performance. They took initiative in implementing caching strategies that improved our response times. Great team player who collaborates well.",
+    name: "Priya Sharma",
+    title: "Senior Developer at Casepoint Pvt Ltd.",
   },
   {
     quote:
-      "Rare combination of technical depth and pragmatic thinking. They built our API infrastructure from scratch with proper testing, monitoring, and documentation. The system has been rock-solid in production.",
-    name: "Emily Watson",
-    title: "VP Engineering at TechVentures",
+      "Passionate learner with strong fundamentals and hands-on project experience. They've built impressive full-stack applications demonstrating solid understanding of modern web technologies and best practices. Shows great potential for growth.",
+    name: "Ankit Mehta",
+    title: "Senior Developer & Mentor",
   },
   {
     quote:
-      "Brilliant architect who designed our event-driven system handling millions of transactions daily. Their expertise in distributed systems and attention to edge cases prevented countless production issues.",
-    name: "David Kim",
-    title: "Lead Architect at FinTech Solutions",
+      "Outstanding student with strong fundamentals in computer science. Their capstone project on microservices architecture demonstrated deep understanding of distributed systems. Always eager to learn and apply new concepts.",
+    name: "Dr. Meena Verma",
+    title: "Professor at Parul University",
   },
   {
     quote:
-      "Top-tier developer with excellent communication skills. They not only delivered high-quality code but also mentored junior developers and improved our entire development workflow with better tooling and practices.",
-    name: "Jennifer Martinez",
-    title: "Director of Engineering at StartupHub",
+      "Dedicated professional who consistently delivers quality work. They show great attention to detail in code reviews and actively contribute to improving our development processes. Reliable and always meets commitments.",
+    name: "Vikram Singh",
+    title: "Senior Engineer at Samrisa Infotech",
   },
 ];
 
@@ -154,20 +165,50 @@ export const companies = [
   {
     id: 3,
     name: "React",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    img: "/react-tile.svg",
+    nameImg: "/reactName.svg",
   },
   {
     id: 4,
     name: "PostgreSQL",
-    img: "/stream.svg",
-    nameImg: "/streamName.svg",
+    img: "/postgresql-tile.svg",
+    nameImg: "/postgresName.svg",
   },
   {
     id: 5,
     name: "Docker",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
+  },
+  {
+    id: 6,
+    name: "TypeScript",
+    img: "/typescript-tile.svg",
+    nameImg: "/tsName.svg",
+  },
+  {
+    id: 7,
+    name: "MongoDB",
+    img: "/mongodb-tile.svg",
+    nameImg: "/mongoName.svg",
+  },
+  {
+    id: 8,
+    name: "Redis",
+    img: "/redis-tile.svg",
+    nameImg: "/redisName.svg",
+  },
+  {
+    id: 9,
+    name: "Kubernetes",
+    img: "/kubernets-tile.svg",
+    nameImg: "/k8sName.svg",
+  },
+  {
+    id: 10,
+    name: "AWS",
+    img: "/aws-tile.svg",
+    nameImg: "/awsName.svg",
   },
 ];
 
@@ -179,7 +220,7 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/samrisa.png",
     year: "July 2025",
-    company: "TechCorp Inc.",
+    company: "Samrisa Infotech",
     skills: [".Net", "Node.js", "Kubernetes", "AWS", "Microservices"],
   },
   {
@@ -189,18 +230,18 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/casepoint.svg",
     year: "Jan 2025",
-    company: "StartupHub",
+    company: "Casepoint Pvt Ltd.",
     skills: ["GraphQL", "Redis", "PostgreSQL", "Docker"],
   },
   {
     id: 3,
     title: "Aspiring SDE",
-    desc: "Developed end-to-end features across the stack, from database design to frontend implementation, with a focus on performance, scalable architecture, and preparing for SDE responsibilities.",
+    desc: "Building personal projects and contributing to open source. Developing end-to-end features across the stack, from database design to frontend implementation, with a focus on performance, scalable architecture, and preparing for SDE responsibilities.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
     year: "Jun 2022",
-    company: "Digital Solutions",
-    skills: ["Terraform", "Jenkins", "Prometheus", "Ansible"],
+    company: "Self-Learning & Projects",
+    skills: ["React", "TypeScript", "MongoDB", "Express"],
   },
   {
     id: 4,
@@ -209,7 +250,7 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/parul-logo.png",
     year: "Sep 2021",
-    company: "CloudScale",
+    company: "Parul University",
     skills: ["React", "TypeScript", "MongoDB", "Express"],
   },
 ];

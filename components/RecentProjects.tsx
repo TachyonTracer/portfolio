@@ -48,7 +48,7 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 transition-transform duration-300 group-hover/pin:scale-105"
+                  className="z-10 absolute bottom-0 transition-transform duration-300 group-hover/pin:scale-110"
                 />
               </div>
 
@@ -82,16 +82,17 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <motion.div
-                  className="flex justify-center items-center gap-2 opacity-70 group-hover/pin:opacity-100 transition-opacity"
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.2 }}
+                <a
+                  href={item.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center gap-2 opacity-70 group-hover/pin:opacity-100 transition-opacity hover:scale-105"
                 >
                   <p className="text-xs lg:text-sm text-purple font-medium">
-                    View Project
+                    Live At
                   </p>
                   <FaLocationArrow className="text-purple" size={12} />
-                </motion.div>
+                </a>
               </div>
             </PinContainer>
           </motion.div>

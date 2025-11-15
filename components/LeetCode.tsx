@@ -188,13 +188,7 @@ const LeetCode = () => {
                 </p>
               )}
               <div className="flex items-center gap-6 mb-4">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-purple">
-                    {loading ? "—" : data.totalSolved ?? getCount("All")}
-                  </div>
-                  <div className="text-xs text-white/60 mt-1">Total Solved</div>
-                </div>
-                <div className="w-px h-12 bg-white/10" />
+                {/* Total removed — focus on individual progress bars */}
                 <div className="flex gap-4 text-sm">
                   <div>
                     <span className="text-emerald-400 font-semibold">
@@ -235,26 +229,7 @@ const LeetCode = () => {
                 ))}
               </div>
 
-              {/* <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-white/70">
-                {[
-                  { k: "Easy", color: "from-emerald-400 to-green-500" },
-                  { k: "Medium", color: "from-yellow-400 to-orange-400" },
-                  { k: "Hard", color: "from-pink-500 to-purple-500" },
-                ].map(({ k, color }) => (
-                  <ProgressBar
-                    key={k}
-                    label={k}
-                    solved={getCount(k as any)}
-                    total={getAllCount(k) ?? "—"}
-                    progress={getProgress(k)}
-                    color={color}
-                  />
-                ))}
-              </div>
-              {error && (
-                <div className="mt-4 text-red-300 text-sm">{error}</div>
-              )}
-              */}
+              
             </div>
 
             <div className="flex items-center gap-4">
