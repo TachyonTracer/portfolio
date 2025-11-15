@@ -129,7 +129,7 @@ const Experience = () => {
                     />
 
                     {/* Icon and Title */}
-                    <div className="relative flex items-center gap-4 mb-4">
+                    <div className="relative flex items-center mb-4">
                       <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-purple/10 border border-purple/20 group-hover:bg-purple/20 transition-colors">
                         <img
                           src={card.thumbnail}

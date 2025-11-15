@@ -1,6 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "LeetCode", link: "#leetcode" },
   { name: "Tech Stack", link: "#tech-stack" },
   { name: "Contact", link: "#contact" },
 ];
@@ -18,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I work across the full stack with modern technologies",
+    title: "I work across the SDE with modern technologies",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -140,26 +141,26 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "AWS",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "ASP.NET",
+    img: "/dotnet-tile.svg",
+    nameImg: "/dotnetName.svg",
   },
   {
     id: 2,
-    name: "PostgreSQL",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "Go",
+    img: "/go-tile.svg",
+    nameImg: "/goName.svg",
   },
   {
     id: 3,
-    name: "Kubernetes",
+    name: "React",
     img: "/host.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "Redis",
-    img: "/s.svg",
+    name: "PostgreSQL",
+    img: "/stream.svg",
     nameImg: "/streamName.svg",
   },
   {
@@ -173,43 +174,43 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Senior Software Engineer",
+    title: "Software Engineer",
     desc: "Architected and implemented microservices infrastructure, reducing system latency by 40% and improving deployment frequency.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-    year: "Jan 2023",
+    thumbnail: "/samrisa.png",
+    year: "July 2025",
     company: "TechCorp Inc.",
-    skills: ["Node.js", "Kubernetes", "AWS", "Microservices"],
+    skills: [".Net", "Node.js", "Kubernetes", "AWS", "Microservices"],
   },
   {
     id: 2,
-    title: "Backend Engineer - Tech Startup",
+    title: "Software Developer Trainee",
     desc: "Built scalable REST and GraphQL APIs handling 10M+ requests/day, implemented caching strategies and database optimization.",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
-    year: "Mar 2021",
+    thumbnail: "/casepoint.svg",
+    year: "Jan 2025",
     company: "StartupHub",
     skills: ["GraphQL", "Redis", "PostgreSQL", "Docker"],
   },
   {
     id: 3,
-    title: "Full Stack Developer",
-    desc: "Developed end-to-end features across the stack, from database design to frontend implementation, with focus on performance and UX.",
+    title: "Aspiring SDE",
+    desc: "Developed end-to-end features across the stack, from database design to frontend implementation, with a focus on performance, scalable architecture, and preparing for SDE responsibilities.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
-    year: "Jun 2019",
+    year: "Jun 2022",
     company: "Digital Solutions",
-    skills: ["React", "TypeScript", "MongoDB", "Express"],
+    skills: ["Terraform", "Jenkins", "Prometheus", "Ansible"],
   },
   {
     id: 4,
-    title: "DevOps Engineer",
-    desc: "Automated CI/CD pipelines, managed cloud infrastructure with IaC, and implemented monitoring solutions for production systems.",
+    title: "Bachelor's in Computer Science",
+    desc: "Completed a Bachelor of Computer Science with emphasis on distributed systems, algorithms, and software engineering. Capstone project involved designing and implementing a scalable microservices architecture; coursework included Operating Systems, Databases, and Advanced Algorithms.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-    year: "Feb 2018",
+    thumbnail: "/parul-logo.png",
+    year: "Sep 2021",
     company: "CloudScale",
-    skills: ["Terraform", "Jenkins", "Prometheus", "Ansible"],
+    skills: ["React", "TypeScript", "MongoDB", "Express"],
   },
 ];
 
@@ -227,3 +228,30 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+export const leetcode = {
+  username: "Tachyon Tracer",
+  link: "https://leetcode.com/TachyonTracer/",
+  totalSolved: 512,
+  easy: 230,
+  medium: 240,
+  hard: 42,
+  topTags: [
+    "Algorithms",
+    "Divide and Conquer",
+    "Hash Table",
+    "Dynamic Programming",
+    "Graphs",
+  ],
+  featuredProblems: [
+    {
+      title: "Longest Increasing Subsequence",
+      url: "https://leetcode.com/problems/longest-increasing-subsequence/",
+    },
+    { title: "Word Ladder", url: "https://leetcode.com/problems/word-ladder/" },
+    {
+      title: "Number of Islands",
+      url: "https://leetcode.com/problems/number-of-islands/",
+    },
+  ],
+};
