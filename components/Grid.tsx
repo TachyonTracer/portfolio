@@ -1,14 +1,37 @@
+import { useEffect, useState } from "react";
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 const Grid = () => {
+  const [blink, setBlink] = useState(false);
+
+  useEffect(() => {
+    let hideTimeout: ReturnType<typeof setTimeout> | null = null;
+    const showTimeout = setTimeout(() => {
+      setBlink(true);
+      hideTimeout = setTimeout(() => setBlink(false), 1200);
+    }, 300);
+
+    return () => {
+      clearTimeout(showTimeout);
+      if (hideTimeout) {
+        clearTimeout(hideTimeout);
+      }
+    };
+  }, []);
+
   return (
-    <section id="about" className="scroll-mt-20">
+    <section
+      id="about"
+      className={`relative scroll-mt-20 transition-all duration-500 ${
+        blink ? "about-highlight-once" : ""
+      }`}
+    >
       <BentoGrid className="w-full py-20">
-        {gridItems.map((item, i) => (
+        {gridItems.map((item) => (
           <BentoGridItem
             id={item.id}
-            key={i}
+            key={item.id}
             title={item.title}
             description={item.description}
             // remove icon prop

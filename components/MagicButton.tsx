@@ -26,7 +26,8 @@ const MagicButton = ({
       className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none transition-all duration-300 hover:scale-[1.02] active:scale-95 hover:shadow-lg hover:shadow-purple/20"
       onClick={handleClick}
     >
-      <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+      {/* gradient border/background – keep it inside the rounded button so corners render correctly */}
+      <span className="absolute inset-0 rounded-lg pointer-events-none animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 
       {/* remove px-3 py-1, add px-5 gap-2 */}
       <span

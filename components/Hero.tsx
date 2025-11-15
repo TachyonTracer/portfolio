@@ -18,10 +18,13 @@ const Hero = () => {
           fill="white"
         />
         <Spotlight
-          className="h-[80vh] w-[50vw] top-10 left-full"
+          className="hidden sm:block h-[80vh] w-[50vw] top-10 left-full"
           fill="purple"
         />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight
+          className="hidden sm:block left-80 top-28 h-[80vh] w-[50vw]"
+          fill="blue"
+        />
       </div>
 
       {/**
@@ -83,9 +86,13 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.4 }}
           >
-            <a href="#about">
+            <a
+              href="https://1drv.ms/b/c/5b2b485580ae9b5e/Efaf5CbOAi9Nn9XhrL4vuQAB2J8um7PlEEzDs-lowuDucA?e=1QSdvH"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <MagicButton
-                title="Show my work"
+                title="Download resume"
                 icon={<FaLocationArrow />}
                 position="right"
               />

@@ -17,14 +17,14 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to build <span className="text-purple">scalable software</span>
+          Ready to build <span className="text-purple">scalable software </span>
           that drives results?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Let&apos;s discuss your technical challenges and architect solutions
           that scale with your business.
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="mailto:priyanshpankhaniya@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
